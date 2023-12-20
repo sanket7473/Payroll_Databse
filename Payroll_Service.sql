@@ -33,3 +33,7 @@ where start between cast('2018-01-03' as date) and date(now());
 
 //UC6 Ability to add gender to employee table
 alter table employee_payroll add gender char(1) After name;
+
+//UC7 Ability to find sum of salary
+select sum(salary) from employee_payroll
+where gender ='F' group by gender;

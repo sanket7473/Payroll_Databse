@@ -16,3 +16,10 @@ start date not null,
 primary key(id)
 
 );
+
+
+//UC3 Ability to create employee payroll in the payroll service
+insert into employee_payroll (name,salary,start) values('sanket',2000,'2017-01-02'),
+('mohit',2005,'2018-01-03'),
+('vinay',2003,'2019-11-13');
+

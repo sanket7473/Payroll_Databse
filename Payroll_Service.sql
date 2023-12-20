@@ -23,3 +23,6 @@ insert into employee_payroll (name,salary,start) values('sanket',2000,'2017-01-0
 ('mohit',2005,'2018-01-03'),
 ('vinay',2003,'2019-11-13');
 
+//UC4 Ability to retrieve all the employee payroll data
+select * from employee_payroll; 
+

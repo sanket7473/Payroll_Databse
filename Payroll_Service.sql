@@ -31,3 +31,5 @@ select salary from employee_payroll where name='sanket';
 select * from employee_payroll
 where start between cast('2018-01-03' as date) and date(now());
 
+//UC6 Ability to add gender to employee table
+alter table employee_payroll add gender char(1) After name;

@@ -26,3 +26,8 @@ insert into employee_payroll (name,salary,start) values('sanket',2000,'2017-01-0
 //UC4 Ability to retrieve all the employee payroll data
 select * from employee_payroll; 
 
+//UC5 Ability to retrieve salary data for a particular employee who have joined in a particular data range
+select salary from employee_payroll where name='sanket';
+select * from employee_payroll
+where start between cast('2018-01-03' as date) and date(now());
+

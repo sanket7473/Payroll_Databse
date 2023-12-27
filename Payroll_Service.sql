@@ -106,3 +106,15 @@ values
 ('sanket','M',5000,'2019-01-14','7996456234','mumbai',2),
 ('rohan','M',5500,'2017-01-14','7996456235','satara',2),
 ('pranali','f',4500,'2018-01-13','7996456236','banglore',1);
+
+
+-- UC12 sql queries working fine with uc4,uc5 and uc6 fine
+
+--uc4
+select * from employee_payroll;
+-- uc5
+select salary,name from employee_payroll
+where name='mohit';
+-- uc6
+update employee_payroll
+set gender='F' where name='mohit';

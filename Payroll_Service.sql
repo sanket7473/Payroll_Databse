@@ -44,3 +44,12 @@ add employee_phone varchar(255),
 add address varchar(255) default 'mumbai',
 add department varchar(255) not null;
 select * from employee_payroll;
+
+-- uc9 ability to extend payroll data to store basic pay,deduction,texiable pay,Income tax and net pay.
+alter table employee_payroll
+add  basic_pay int,
+add deduction int,
+add Taxable_pay int,
+add income_pay int,
+add net_pay int;
+select * from employee_payroll;

@@ -53,3 +53,16 @@ add Taxable_pay int,
 add income_pay int,
 add net_pay int;
 select * from employee_payroll;
+
+-- UC10 Ability to make Terrisa as a part of sales and HR.
+truncate table employee_payroll;
+insert into employee_payroll
+(name,gender,salary,start,employee_phone,address,department,basic_pay,deduction,Taxable_pay,income_pay,net_pay)
+values('Terrisa','f',4500,'2018-01-14','7996456232','pune','hr',23000,2000,1000,1200,21000),
+('mohit','M',4000,'2018-02-13','7996456233','pune','hr',23000,2000,1000,1200,21000),
+('Terrisa','f',4500,'2018-01-14','7996456232','pune','sales',25000,2000,1000,1200,21000),
+('sanket','M',5000,'2019-01-14','7996456234','mumbai','sales',25000,2000,1000,1200,21000),
+('rohan','M',5500,'2017-01-14','7996456235','satara','sales',25000,2000,1000,1200,21000),
+('pranali','f',4500,'2018-01-13','7996456236','banglore','hr',23000,2000,1000,1200,21000);
+
+
